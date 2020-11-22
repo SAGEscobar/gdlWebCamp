@@ -1,0 +1,9 @@
+# TEAM
+
+    Sergio ALfredo Gutierrez Escobar -- gsergioalfredo@yahoo.com
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Modernizr, Normalize.css
