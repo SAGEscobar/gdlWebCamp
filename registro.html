@@ -82,15 +82,15 @@
         <div id="datos-usuarios" class="registro caja clearfix">
             <div class="campo">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Nombre">
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre">
             </div>
             <div class="campo">
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Apellido">
+                <input id="apellido" type="text" name="apellido" placeholder="Apellido">
             </div>
             <div class="campo">
               <label for="email">Email</label>
-              <input type="email" name="email" placeholder="Email">
+              <input id="email" type="email" name="email" placeholder="Email">
           </div>
           <div id="error"></div>
         </div>
@@ -143,7 +143,7 @@
                   <li>Todos los Talleres</li>
     
                   <div class="orden">
-                    <label for="pase_dos_dia">boletos deseados</label>
+                    <label for="pase_dos_dias">boletos deseados</label>
                     <input type="number" min="0" id="pase_dos_dias" size="3" placeholder="0">
                   </div>
                 </ul>
@@ -311,6 +311,7 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+  <script src="js/main.js"></script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
