@@ -68,7 +68,7 @@
       </div>
 
       <nav class="navegacion-principal">
-        <a href="#">conferencia</a>
+        <a href="conferencia.html">conferencia</a>
         <a href="#">Calendario</a>
         <a href="#">Invitados</a>
         <a href="registro.html">Reservaciones</a>
@@ -113,6 +113,36 @@
               <p><i class="fa fa-clock" aria-hidden="true"></i> 20:00<p>
               <p><i class="fa fa-calendar" aria-hidden="true"></i> 10/Dic</p>
               <p><i class="fa fa-user" aria-hidden="true"></i> Juan Pablo de la Torre Valdez</p>
+            </div>
+            <a href="#" class="boton float-right">Ver Todos</a>
+          </div>
+          <div class="info-curso ocultar clearfix" id="conferencias">
+            <div class="detalle-evento">
+              <h3>Como ser Free Lancer</h3>
+              <p><i class="fa fa-clock" aria-hidden="true"></i> 10:00<p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 10/Dic</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> Gregorio Sanchez</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Tecnologias del Futuro</h3>
+              <p><i class="fa fa-clock" aria-hidden="true"></i> 17:00<p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 10/Dic</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez</p>
+            </div>
+            <a href="#" class="boton float-right">Ver Todos</a>
+          </div>
+          <div class="info-curso ocultar clearfix" id="seminarios">
+            <div class="detalle-evento">
+              <h3>Diseño UI/UX para moviles</h3>
+              <p><i class="fa fa-clock" aria-hidden="true"></i> 17:00<p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 11/Dic</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> Jarol Garcia</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Aprende a programar en una mañana</h3>
+              <p><i class="fa fa-clock" aria-hidden="true"></i> 10:00<p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 11/Dic</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera</p>
             </div>
             <a href="#" class="boton float-right">Ver Todos</a>
           </div>
@@ -167,16 +197,16 @@
     <div class="contenedor">
       <ul class="resumen-evento clearfix">
         <li>
-          <p class="numero">6</p>Invitados
+          <p class="numero"></p>Invitados
         </li>
         <li>
-          <p class="numero">15</p>Talleres
+          <p class="numero"></p>Talleres
         </li>
         <li>
-          <p class="numero">3</p>Dias
+          <p class="numero"></p>Dias
         </li>
         <li>
-          <p class="numero">9</p>Conferencias
+          <p class="numero"></p>Conferencias
         </li>
       </ul>
     </div>
@@ -279,16 +309,16 @@
     <div class="cuenta-regresiva contenedor">
       <ul class="clearfix">
         <li>
-          <p class="numero">80</p> Dias
+          <p class="numero" id="dias">0</p> Dias
         </li>
         <li>
-          <p class="numero">15</p> Horas
+          <p class="numero" id="horas">0</p> Horas
         </li>
         <li>
-          <p class="numero">5</p> Minutos
+          <p class="numero" id="minutos">0</p> Minutos
         </li>
         <li>
-          <p class="numero">30</p> Segundos
+          <p class="numero" id="segundos">0</p> Segundos
         </li>
       </ul>
     </div>
@@ -336,7 +366,12 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <script src="js/jquery.lettering.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src='js/jquery.waypoints.js'></script>
   <script src="js/main.js"></script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
