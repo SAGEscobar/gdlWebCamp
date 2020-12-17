@@ -23,16 +23,6 @@ const mostrarDias = () => {
 (function(){
     "use strict"
     document.addEventListener('DOMContentLoaded', () => {
-
-        let map = L.map('mapa').setView([12.103266, -86.159543], 13);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([12.103266, -86.159543]).addTo(map)
-            .bindPopup('gdlWebCamp')
-            .openPopup();
         
         //Campos Datos-Usuaris
         let nombre = document.getElementById('nombre');
@@ -197,6 +187,17 @@ $(function() {
             offset: '60%'
         });
     }
+
+    //Mapa
+    let map = L.map('mapa').setView([12.103266, -86.159543], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([12.103266, -86.159543]).addTo(map)
+            .bindPopup('gdlWebCamp')
+            .openPopup();
 
     //Faltan
 

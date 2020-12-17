@@ -1013,6 +1013,55 @@ textarea {
     margin-bottom: 5px;
   }
 
+  /** Dia **/
+
+  div.dia{
+    width: 50%;
+    float: left;
+    border: 2px solid #e1e1e1;
+  }
+
+  @media only screen and (min-width: 768px) {
+    div.dia{
+      width: 33.3%;
+      min-height: 250px;
+      padding-top: 20px;
+    }
+  }
+
+  div.dia p{
+    font-size: 1em;
+    text-align: center;
+  }
+
+  div.calendario h3{
+    text-align: center;
+    color: #ffffff;
+    background-color: #fe4918;
+    padding: 20px 0;
+  }
+
+  div.dia .titulo{
+    font-weight: bold;
+    color: #fe4918;
+    font-size: 1.2em;
+  }
+
+  div.dia i{
+    font-size: 1.6em;
+    color: #fe4918;
+    padding-right: 5px;
+  }
+
+  div.dia:hover{
+    background-color: #e1e1e1;
+  }
+
+  div.calendario::after{
+    clear: both;
+    display: block;
+    content: '';
+  }
 
 /* ==========================================================================
    Helper classes

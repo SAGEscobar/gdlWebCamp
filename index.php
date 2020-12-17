@@ -2,80 +2,12 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <?php include_once 'includes/templates/head.php'; ?>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <header class="site-header">
-    <div class="hero">
-      <div class="contenido-header">
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </nav>
-
-        <div class="informacion-evento">
-          
-          <div class="clearfix">
-            <p class="fecha"><i class="fas fa-calendar-alt"></i> 10-12/Dic</p>
-            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Managua, Nicaragua</p>
-          </div>
-
-          <h1 class="nombre-sitio">GDLWEBCAMP</h1>
-          <p class="slogan">La mejor conferencia de <span>Diseño Web</span></p>
-        </div> <!--Fin Informacion-evento-->
-      </div>
-    </div>
-  </header>
-  <div class="barra">
-
-    <div class="contenedor clearfix">
-
-      <div class="logo">
-        <img src="img/logo.svg" alt="Logo gdlWebCamp">
-      </div>
-
-      <div class="menu-movil">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <nav class="navegacion-principal">
-        <a href="conferencia.html">conferencia</a>
-        <a href="#">Calendario</a>
-        <a href="#">Invitados</a>
-        <a href="registro.html">Reservaciones</a>
-      </nav>
-
-    </div><!--Coerre .contenedor-->
-  </div><!--Cierre .barra-->
+  <?php include_once 'includes/templates/header.php'; ?>  
 
   <section class="seccion contenedor">
     <h2>La Mejor Conferencia de Diseño Web en Español</h2>
@@ -324,56 +256,10 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="clearfix contenedor">
-      <div class="footer-informacion">
-        <h3>Sobre <span>gdlWebCamp</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum odit veniam itaque ad natus eius ullam? Temporibus facere voluptate aliquam corrupti officiis laborum. Laudantium dolore esse quidem adipisci quam!</p>
-      </div>
-      <div class="ultimos-tweets">
-        <h3>Ultimos <span>Tweets</span></h3>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti commodi voluptas, nisi sunt voluptatum natus consectetur.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti commodi voluptas, nisi sunt voluptatum natus consectetur.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti commodi voluptas, nisi sunt voluptatum natus consectetur.
-          </li>
-        </ul>
-      </div>
-      <div class="menu">
-        <h3>Redes <span>Sociales</span></h3>
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </nav>
-      </div>
-    </div>
-  </footer>
 
-  <p class="copyright">
-    Todos los derechos reservadios GDLWEBCAMP 2020.
-  </p>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/jquery.animateNumber.js"></script>
-  <script src="js/jquery.countdown.js"></script>
-  <script src="js/jquery.lettering.js"></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src='js/jquery.waypoints.js'></script>
-  <script src="js/main.js"></script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <?php include_once 'includes/templates/footer.php'; ?>
+
 </body>
 
 </html>
