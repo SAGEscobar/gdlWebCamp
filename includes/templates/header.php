@@ -41,9 +41,9 @@
 
       <nav class="navegacion-principal">
         <a href="conferencia.php">conferencia</a>
-        <a href="calendario.php">Calendario</a>
-        <a href="#">Invitados</a>
-        <a href="registro.php">Reservaciones</a>
+        <a href="calendario.php">calendario</a>
+        <a href="invitados.php">invitados</a>
+        <a href="registro.php">reservaciones</a>
       </nav>
 
     </div><!--Coerre .contenedor-->

@@ -6,7 +6,7 @@
   <link rel="stylesheet" href='css/lightbox.css'></link>
 </head>
 
-<body>
+<body class='conferencia'>
 
 <?php include_once 'includes/templates/header.php'; ?>
 

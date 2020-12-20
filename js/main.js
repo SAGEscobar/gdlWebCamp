@@ -49,6 +49,8 @@ const mostrarDias = () => {
         pase2Dias.addEventListener('blur', mostrarDias);
         paseCompleto.addEventListener('blur', mostrarDias);
 
+        btnRegistro.disabled=true
+
         nombre.addEventListener('blur', function(){
             if(this.value == ''){
                 errorDiv.style.display = 'block';
@@ -132,6 +134,9 @@ const mostrarDias = () => {
                     listaProducto.innerHTML += producto + '<br/>';
                 });
                 sumaTotal.innerHTML = '$' + totalPagar.toFixed(2);
+                btnRegistro.disabled = false
+
+                document.getElementById('total_pedido').value = totalPagar;
             }
         });
     });
@@ -208,5 +213,15 @@ $(function() {
         $('#segundos').html(event.strftime('%S'))
     });
 
+});
 
+$(function(){
+    $('.colbox').colorbox({inline: true, width: "50%"});
+    $('.color-mail').colorbox({inline: true, width: "50%"});
+});
+
+$(function(){
+    $('body.conferencia .navegacion-principal a:contains(conferencia)').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains(calendario)').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains(invitados)').addClass('activo');
 });
