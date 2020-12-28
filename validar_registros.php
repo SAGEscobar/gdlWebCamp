@@ -6,6 +6,7 @@
             $total = $_POST['total_pedido'];
             $fecha = date('Y-m-d H:i:s');
 
+            
             include_once 'includes/funciones/funciones.php';
 
             $boletos = $_POST['boletos'];
